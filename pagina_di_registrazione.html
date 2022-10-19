@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina di registrazione</title>
+    <style>
+        body {
+            background-image: url(https://wallpapercave.com/wp/wp9820584.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        input {
+            width:25%;
+            padding: 12px 20px;
+        }
+        input[type=checkbox] {
+            width:10%;
+        }
+        input[type=radio] {
+            width:10%;
+        }
+        button {
+            background-color: gray;
+            font-size: 16px;
+            font-family: 'Tahoma';
+        }
+        button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 80px";>
+        <h1 style="color: whitesmoke; font-size:50px; font-family:'Tahoma'";>Benvenuto su Spotifai!</h1>
+        <h2 style="color:whitesmoke; font-family:'Tahoma'">In questa pagina potrai registrarti sulla nostra piattaforma e diventare un nostro utente.</h2>
+    </div>
+    <div style="background-image: url(https://img.freepik.com/free-vector/white-elegant-texture-background-style_23-2148432200.jpg?w=2000); margin-top: 80px; margin-left: 15%; margin-right: 15%;";>
+        <br>
+        <h4 style="text-align:center; font-size:20px; font-family:'Tahoma'">Inserisci qui tutti i tuoi dati e premi il pulsante <span style="color:red">Registrati</span> una volta terminato.</h4>
+        <form onsubmit="alert('Registrazione inviata!')">
+            <div style="text-align:center">
+                <input type="text" placeholder="Inserisci il tuo nome"/>
+                <input type="text" placeholder="Inserisci il tuo cognome"/>
+            </div><br>
+            <div style="text-align:center">
+                <input type="email" placeholder="Inserisci il tuo indirizzo email"/>
+                <input type="password" placeholder="Inserisci la tua password"/>
+            </div><br>
+            <div style="text-align:center">
+                <input type="date" placeholder="Inserisci la tua data di nascita"/>
+                <input type="number" placeholder="Inserisci il tuo numero di telefono"/>
+            </div><br>
+            <div style="text-align:center">
+            <h4 style="font-family:'Tahoma'">Seleziona i tuoi generi musicali preferiti:</h4>
+            <div style="text-align:center; margin-right: 80px">
+                <input type="checkbox" id="rock" name="rock" value="Rock"/>
+                <label for="rock">Rock</label>
+            </div>
+            <div style="text-align:center; margin-right: 88px">
+                <input type="checkbox" id="pop" name="pop" value="Pop"/>
+                <label for="pop">Pop</label>
+            </div>
+            <div style="text-align:center; margin-right: 85px">
+                <input type="checkbox" id="jazz" name="jazz" value="Jazz"/>
+                <label for="jazz">Jazz</label>
+            </div>
+            <div style="text-align:center; margin-right: 85px">
+                <input type="checkbox" id="rap" name="rap" value="Rap"/>
+                <label for="rap">Rap</label>
+            </div>
+            <div style="text-align:center; margin-right: 58px">
+                <input type="checkbox" id="classica" name="classica" value="Classica"/>
+                <label for="classica">Classica</label>
+            </div>
+            </div>
+            <div style="text-align:center">
+                <h4 style="font-family:'Tahoma'">Accetazione dei termini e condizioni del nostro servizio</h4>
+                <div style="text-align:center; margin-right: 80px;">
+                    <input type="radio" id="accetto" name="selezione" value="accetto"/>
+                    <label for="accetto">Accetto</label>
+                    <input type="radio" id="non_accetto" name="selezione" value="non_Accetto"/>
+                    <label for="non_accetto">Non accetto</label>
+                </div>
+            </div><br><br>
+            <div style="text-align:center">
+                <button type="submit">Registrati</button>
+            </div><br><br>
+        </form>
+    </div>
+</body>
+</html>
